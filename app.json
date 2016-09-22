@@ -11,10 +11,13 @@
     },
     "AWS_SECRET_ACCESS_KEY": {
       "description": "AWS_SECRET_ACCESS_KEY"
+    },
+    "RAILS_ENV": {
+      "value": "production"
     }
   },
   "name": "BBQ study",
   "scripts": {
-    "postdeploy": "bundle exec rake db:setup"
+    "postdeploy": "bin/rails db:migrate"
   }
 }
